@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Brand</title>
+    <style>
+          @media (min-width: 600px){
+            body{
+                background-color: rgb(252, 177, 150);
+                }
+            }
+            @media(max-width: 599px){
+                body{
+                    background-color: yellow;
+                }
+            }
+        table{
+            background-color: burlywood;
+            border: 3px solid green;
+            border-collapse : collapse;
+        }
+        td,th{
+            color:darkred;
+            border : 2px solid green;
+            padding : 5px;
+            font-size:20px;
+        }
+       ol,ul{
+        font-size:20px;
+        color:rgb(90, 92, 90);
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-weight:300;
+       }
+       #prod
+        {
+                display: flex;
+                flex-wrap: wrap;
+                background-color:lightgoldenrodyellow;
+        }
+        #details{
+            border : 2px solid black ;
+            display:flex;
+            flex-wrap: wrap;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:29px;    
+            background-color: lavender;   
+        }
+       
+    </style>
+</head>
+<body>
+    <h1 style = "color:blueviolet ; text-align:left; font-size : 35px;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight: 5900;">Skin and Hair care brand</h1>
+
+    <ol style="background-color: aquamarine;">
+        <p style="color:darkmagenta;text-align:start;font-size:29px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight:500;">Our products:</p>
+        <li>Acne serum</li>
+        <li>Skin-brightening serum</li>
+        <li>Vitamin C Facewash</li>
+        <li>Keratin shampoo</li>
+        <li>Sunscreen SPF-50</li>
+    </ol>
+  
+    <ul style="background-color:violet">
+        <p style="color:black;text-align:left;font-size:29px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight:500">Benefits:</p>
+        <li>Clear skin</li>
+        <li>Reduced hairfall</li>
+        <li>Reduced dandruff</li>
+    </ul>
+
+    <table>
+        <thead>
+            <th>Product name</th>
+            <th>Quantity(in ml)</th>
+            <th>Price(in INR)</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Acne Serum</td>
+                <td>100</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>Skin-brightening serum</td>
+                <td>100</td>
+                <td>450</td>
+            </tr>
+            <tr>
+                <td>Facewash</td>
+                <td>250</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>Shampoo</td>
+                <td>300</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>Sunscreen</td>
+                <td>150</td>
+                <td>300</td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <p style="color:darkmagenta;text-align:start;font-size:25px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight:500">Image Gallery</p>
+    </div>
+    <div id = "prod">
+        <div><img src="facewash.jpeg" alt="Facewash" width="300" height="300"></div>
+        <div> <img src="serum.jpeg" alt="Serum" width="300" height="300" ></div>
+        <div><img src="sunscreen.jpeg" alt="sunscreen" width="300" height="300"></div>
+        <div><img src="shampoo.jpeg" alt="Shampoo" width="300" height="300"></div>
+    </div>
+    <div>
+        <p style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:20px;font-weight:500;">Enter your details here:</p>
+    </div>
+    <div id="details">
+    <form>
+        <input type="text" placeholder="Full Name">
+    </form>
+    <form>
+        <input type="email" placeholder="your mail-id">
+    </form>
+    <form >
+        <input type="date,month,year" placeholder="DOB">
+    </form>
+    <form>
+        <input type ="tel" placeholder="Phone number">
+    </form>
+    <form >
+        <input type="password" placeholder="password">
+    </form>
+    <form>
+        <input type="submit">
+    </form>
+</div>
+
+</body>
+</html>
